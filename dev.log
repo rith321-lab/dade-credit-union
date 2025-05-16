@@ -1,0 +1,330 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.2.4
+   - Local:        http://localhost:3000
+   - Network:      http://10.16.91.162:3000
+
+ ✓ Starting...
+ ✓ Ready in 969ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1019ms (748 modules)
+ HEAD / 200 in 1198ms
+ ✓ Compiled in 243ms (316 modules)
+ GET / 200 in 81ms
+ ✓ Compiled /heloc in 264ms (790 modules)
+ GET /heloc 200 in 348ms
+ ✓ Compiled /heloc/apply in 165ms (805 modules)
+ GET /heloc/apply 200 in 223ms
+ ✓ Compiled /api/heloc/applications in 166ms (826 modules)
+ POST /api/heloc/applications 201 in 225ms
+ ✓ Compiled /heloc/apply/success in 78ms (833 modules)
+ GET /heloc/apply/success?id=4e654983-a8b8-49fd-9af6-e7b5c46319d4 200 in 114ms
+ GET / 200 in 134ms
+ ✓ Compiled /auto-loan in 271ms (866 modules)
+ GET /auto-loan 200 in 305ms
+ ○ Compiling /auto-loan/apply ...
+ ✓ Compiled /auto-loan/apply in 530ms (1017 modules)
+ GET /auto-loan/apply?type=cash-out 200 in 560ms
+ GET /heloc 200 in 76ms
+ GET / 200 in 34ms
+ ✓ Compiled /join in 196ms (1026 modules)
+ GET /join 200 in 214ms
+ ✓ Compiled /goals in 350ms (1073 modules)
+ GET /goals 200 in 373ms
+ GET /goals 200 in 9ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1338ms (2102 modules)
+ GET /dashboard 200 in 1440ms
+ GET /dashboard 200 in 6ms
+ GET / 200 in 85ms
+ GET /dashboard 200 in 8ms
+ GET / 200 in 57ms
+ ✓ Compiled /join in 163ms (1128 modules)
+ GET /join 200 in 204ms
+ ✓ Compiled /api/membership/applications in 259ms (2133 modules)
+ POST /api/membership/applications 201 in 312ms
+ ✓ Compiled /join/success in 183ms (2142 modules)
+ GET /join/success 200 in 212ms
+ GET / 200 in 35ms
+ GET /join 200 in 7ms
+ POST /api/membership/applications 201 in 10ms
+ GET /join/success 200 in 7ms
+ GET /join/success 200 in 6ms
+ GET /join/success 200 in 14ms
+ ✓ Compiled in 530ms (1536 modules)
+ ✓ Compiled in 206ms (1002 modules)
+ ⨯ ./app/auto-loan/apply/page.tsx
+Error:   [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/auto-loan/apply/page.tsx[0m:216:1]
+ [2m213[0m |   const loanInfo = getLoanTypeInfo();
+ [2m214[0m |   
+ [2m215[0m |   return (
+ [2m216[0m |     <div className="flex min-h-screen flex-col">
+     : [35;1m     ^^^[0m
+ [2m217[0m |       <header className="border-b py-4">
+ [2m218[0m |         <div className="container flex items-center justify-between px-4 md:px-6">
+ [2m219[0m |           <Link href="/" className="font-bold text-lg text-navy-700">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/auto-loan/apply/page.tsx
+ ✓ Compiled in 173ms (1002 modules)
+ ✓ Compiled in 141ms (1002 modules)
+ ✓ Compiled / in 79ms (586 modules)
+ GET / 200 in 192ms
+ GET / 200 in 26ms
+ GET / 200 in 23ms
+ GET / 200 in 23ms
+ GET / 200 in 22ms
+ ✓ Compiled /_not-found in 221ms (1573 modules)
+ GET /financial-wellness 404 in 251ms
+ GET /financial-wellness 404 in 24ms
+ GET / 200 in 69ms
+ GET /join 200 in 8ms
+ GET /goals 200 in 11ms
+ ✓ Compiled /dashboard in 228ms (1120 modules)
+ GET /dashboard 200 in 255ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 631ms (2125 modules)
+ GET /join/success 200 in 451ms
+ GET /join/success 200 in 428ms
+ GET / 200 in 48ms
+ ✓ Compiled in 191ms (1005 modules)
+ GET / 200 in 26ms
+ ✓ Compiled /credit-card in 450ms (2144 modules)
+ GET /credit-card 200 in 494ms
+ GET /credit-card 200 in 7ms
+ ✓ Compiled /credit-card/apply in 324ms (2141 modules)
+ GET /credit-card/apply?id=cash-rewards 200 in 357ms
+ HEAD / 200 in 65ms
+ GET / 200 in 50ms
+ GET /auto-loan 200 in 12ms
+ ✓ Compiled /auto-loan/apply in 157ms (1145 modules)
+ GET /auto-loan/apply?type=cash-out 200 in 182ms
+ GET / 200 in 81ms
+ ✓ Compiled /_not-found in 168ms (1592 modules)
+ GET /ledger-monitoring 404 in 200ms
+ GET /fraud-detection 404 in 12ms
+ GET / 200 in 33ms
+ GET / 200 in 125ms
+ GET /analytics 404 in 8ms
+ GET /analytics 404 in 16ms
+ GET / 200 in 51ms
+ GET /financial-wellness 404 in 5ms
+ GET /financial-wellness 404 in 14ms
+ GET / 200 in 53ms
+ GET /coaching 404 in 5ms
+ GET /coaching 404 in 13ms
+ GET / 200 in 44ms
+ ✓ Compiled in 389ms (1532 modules)
+Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /auto-loan 200 in 113ms
+ GET / 200 in 117ms
+ GET /credit-card 200 in 14ms
+ GET /credit-card 200 in 7ms
+ GET /auto-loan 200 in 14ms
+ ✓ Compiled /education in 358ms (1518 modules)
+ GET /education 200 in 391ms
+ ✓ Compiled /bnpl in 179ms (1524 modules)
+ GET /bnpl 200 in 223ms
+ GET / 200 in 28ms
+ ✓ Compiled in 214ms (1521 modules)
+ GET /auto-loan 200 in 85ms
+ GET / 200 in 88ms
+ ✓ Compiled in 163ms (1521 modules)
+ GET /auto-loan 200 in 68ms
+ GET / 200 in 85ms
+ ✓ Compiled in 288ms (1521 modules)
+ GET /auto-loan 200 in 58ms
+ GET / 200 in 65ms
+ ✓ Compiled in 166ms (1521 modules)
+ GET /auto-loan 200 in 41ms
+ GET / 200 in 45ms
+ ✓ Compiled in 161ms (1521 modules)
+ GET /auto-loan 200 in 41ms
+ GET / 200 in 44ms
+ ✓ Compiled in 248ms (1521 modules)
+ GET /auto-loan 200 in 40ms
+ GET / 200 in 43ms
+ ✓ Compiled in 253ms (1521 modules)
+ GET /auto-loan 200 in 41ms
+ GET / 200 in 45ms
+ ✓ Compiled in 243ms (1521 modules)
+ GET /auto-loan 200 in 38ms
+ GET / 200 in 43ms
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET / 500 in 1095ms
+ GET /auto-loan 500 in 1096ms
+ GET /auto-loan 500 in 5ms
+ GET / 500 in 9ms
+ GET /auto-loan 500 in 7ms
+ GET / 500 in 9ms
+ ○ Compiling /_error ...
+ GET / 500 in 6ms
+ GET /auto-loan 500 in 11ms
+ ✓ Compiled /_error in 131ms (1256 modules)
+ GET /auto-loan 500 in 7ms
+ GET / 500 in 10ms
+ ✓ Compiled in 140ms (1256 modules)
+ GET / 500 in 8ms
+ GET /auto-loan 500 in 11ms
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 201ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 88ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /auto-loan 500 in 5ms
+ GET / 500 in 5ms
+ ○ Compiling /_not-found ...
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 7ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 7ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET /auto-loan 500 in 381ms
+ GET / 500 in 382ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 7ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 6ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET / 500 in 303ms
+ GET /auto-loan 500 in 307ms
+ GET / 500 in 4ms
+ GET /auto-loan 500 in 5ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 8ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 9ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET /auto-loan 500 in 217ms
+ GET / 500 in 212ms
+ ⨯ ./app/education/page.tsx
+Error:   [31mx[0m Unknown regular expression flags.
+     ,-[[36;1;4m/Users/rishi/Downloads/dade-credit-union/app/education/page.tsx[0m:198:1]
+ [2m195[0m |     </div>
+ [2m196[0m |   )
+ [2m197[0m | }
+ [2m198[0m | EOF < /dev/null
+     : [35;1m      ^^^^^^^^^[0m
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/education/page.tsx
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 214ms
+ GET /_next/static/webpack/9eec21ce7223a262.webpack.hot-update.json 500 in 212ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /auto-loan 500 in 5ms
+ GET /auto-loan 500 in 6ms
+ GET / 500 in 6ms

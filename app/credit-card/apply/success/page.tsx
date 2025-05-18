@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { CheckCircle2, Clock, CreditCard, ShieldCheck, Wallet } from 'lucide-react';
@@ -9,7 +10,7 @@ import { Progress } from '@/components/ui/progress';
 import { Separator } from '@/components/ui/separator';
 import Logo from '@/components/logo';
 
-export default function CreditCardSuccessPage() {
+function CreditCardSuccessContent() {
   const searchParams = useSearchParams();
   const cardType = searchParams.get('type') || 'rewards';
   
@@ -278,4 +279,12 @@ function getCardDetails(cardType: string) {
   };
   
   return cardDetails[cardType as keyof typeof cardDetails] || cardDetails['rewards'];
+}
+
+export default function CreditCardSuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CreditCardSuccessContent />
+    </Suspense>
+  );
 }

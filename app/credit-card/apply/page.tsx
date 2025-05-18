@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Check, CreditCard, FileText, LockKeyhole, User, AlertTriangle } from 'lucide-react';
@@ -67,7 +67,7 @@ const creditCards: CardType[] = [
 // Application step types
 type ApplicationStep = 'card-selection' | 'personal' | 'financial' | 'review' | 'security' | 'success';
 
-export default function CreditCardApplyPage() {
+function CreditCardApplyContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const cardIdParam = searchParams.get('id');
@@ -1269,5 +1269,13 @@ export default function CreditCardApplyPage() {
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function CreditCardApplyPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CreditCardApplyContent />
+    </Suspense>
   );
 }

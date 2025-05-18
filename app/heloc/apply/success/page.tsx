@@ -1,10 +1,11 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-export default function HelocSuccessPage() {
+function HelocSuccessContent() {
   const params = useSearchParams();
   const id = params.get('id');
   return (
@@ -18,5 +19,13 @@ export default function HelocSuccessPage() {
         <Button>Return Home</Button>
       </Link>
     </div>
+  );
+}
+
+export default function HelocSuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HelocSuccessContent />
+    </Suspense>
   );
 } 

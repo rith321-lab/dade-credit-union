@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { CheckCircle2, Download, FileText, Home, Phone } from 'lucide-react';
@@ -9,7 +9,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Separator } from '@/components/ui/separator';
 import Logo from '@/components/logo';
 
-export default function AutoLoanSuccessPage() {
+function getLoanTypeName(type: string): string {
+  switch (type) {
+    case 'green':
+      return 'Green Vehicle';
+    case 'refinance':
+      return 'Refinance';
+    case 'used':
+      return 'Used Vehicle';
+    case 'first-time':
+      return 'First-Time Buyer';
+    default:
+      return 'New Vehicle';
+  }
+}
+
+function AutoLoanSuccessContent() {
   const searchParams = useSearchParams();
   const [applicationDetails, setApplicationDetails] = useState({
     id: 'AL-' + Math.floor(1000000 + Math.random() * 9000000),
@@ -250,17 +265,10 @@ export default function AutoLoanSuccessPage() {
   );
 }
 
-function getLoanTypeName(type: string): string {
-  switch (type) {
-    case 'green':
-      return 'Green Vehicle';
-    case 'refinance':
-      return 'Refinance';
-    case 'used':
-      return 'Used Vehicle';
-    case 'first-time':
-      return 'First-Time Buyer';
-    default:
-      return 'New Vehicle';
-  }
+export default function AutoLoanSuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AutoLoanSuccessContent />
+    </Suspense>
+  );
 }

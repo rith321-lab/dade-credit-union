@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Car, CheckCircle2, CreditCard, FileText, UserRound, Home } from 'lucide-react';
+import { ArrowLeft, Car, CheckCircle2, CreditCard, FileText, UserRound, Home, DollarSign } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -16,7 +16,7 @@ import Logo from '@/components/logo';
 
 type FormStatus = 'personal' | 'vehicle' | 'employment' | 'financial' | 'review';
 
-export default function AutoLoanApplyPage() {
+function AutoLoanForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const loanType = searchParams.get('type') || 'standard';
@@ -1208,5 +1208,13 @@ export default function AutoLoanApplyPage() {
         </div>
       </footer>
     </div>
+  );
+}
+
+export default function AutoLoanApplyPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AutoLoanForm />
+    </Suspense>
   );
 }
